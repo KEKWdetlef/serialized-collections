@@ -1,0 +1,14 @@
+{
+  "name": "com.kekw-detlef.serialized-collections",
+  "displayName": "serialized-collections",
+  "version": "0.1.0",
+  "unity": "6000.4",
+  "dependencies": {
+    "com.unity.test-framework": "1.6.0"
+  },
+  "author": {
+    "name": "Tom Sch\u00fcler alias KEKW Detlef",
+    "url": "https://serialized-collections.kekw-detlef.com",
+    "email": "tom.schueler01@t-online.de"
+  }
+}
