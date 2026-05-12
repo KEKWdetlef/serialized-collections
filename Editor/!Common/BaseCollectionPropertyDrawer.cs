@@ -11,6 +11,7 @@ namespace KekwDetlef.SerializedCollections.Editor
         private protected abstract bool IsLengthEditable();
         private protected abstract Type GetItemType(SerializedProperty property);
 
+        
         public sealed override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
             SerializedProperty serializedDataProperty = property.FindPropertyRelative(SCollection<byte, byte>.SerializedDataProperty);
@@ -65,7 +66,7 @@ namespace KekwDetlef.SerializedCollections.Editor
         {
             Foldout foldout = new Foldout()
             {
-                text = property.displayName,
+                text = preferredLabel,
                 value = property.isExpanded,
                 // viewDataKey = $"{property.serializedObject.targetObject.GetEntityId()}_{property.propertyPath}"
             };
