@@ -13,6 +13,5 @@ namespace KekwDetlef.SerializedCollections
 
         public SCHashSet() : base() { }
         public SCHashSet(IEnumerable<T> collection) : base(collection) { }
-
     }
 }

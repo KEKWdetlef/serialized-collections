@@ -67,12 +67,10 @@ namespace KekwDetlef.SerializedCollections.Editor
             {
                 text = property.displayName,
                 value = property.isExpanded,
-                viewDataKey = $"{property.serializedObject.targetObject.GetEntityId()}_{property.propertyPath}"
+                // viewDataKey = $"{property.serializedObject.targetObject.GetEntityId()}_{property.propertyPath}"
             };
 
-            foldout.RegisterValueChangedCallback((callbackContext) => {
-                property.isExpanded = callbackContext.newValue;
-            });
+            foldout.RegisterValueChangedCallback((callbackContext) => { property.isExpanded = callbackContext.newValue; });
 
             VisualElement header = CreateFoldoutHeader();
             foldout.hierarchy.Insert(0, header);
