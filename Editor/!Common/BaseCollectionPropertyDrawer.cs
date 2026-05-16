@@ -68,7 +68,7 @@ namespace KekwDetlef.SerializedCollections.Editor
             {
                 text = preferredLabel,
                 value = property.isExpanded,
-                // viewDataKey = $"{property.serializedObject.targetObject.GetEntityId()}_{property.propertyPath}"
+                viewDataKey = $"{property.serializedObject.targetObject.GetEntityId()}_{property.propertyPath}"
             };
 
             foldout.RegisterValueChangedCallback((callbackContext) => { property.isExpanded = callbackContext.newValue; });
